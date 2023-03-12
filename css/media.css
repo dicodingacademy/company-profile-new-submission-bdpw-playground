@@ -1,0 +1,170 @@
+/* Sertakan CSS media query di sini untuk menerapkan sifat responsif pada halaman web */
+
+/* SM: minimum viewport width 576px or above */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  /* BEGIN OF HEADER */
+  header {
+  }
+
+  main .services .service-list .service-item {
+    flex-basis: 80%;
+  }
+  /* END OF HEADER */
+}
+
+/* MD: minimum viewport width 768px or above */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .input-control-dbl {
+    flex-direction: row;
+  }
+
+  /* BEGIN OF HEADER */
+  header {
+  }
+
+  header nav .navbar-toggler,
+  header nav .navbar-toggler-checkbox {
+    display: none;
+  }
+
+  header nav .nav-list {
+    position: initial;
+
+    display: flex;
+    flex-direction: row;
+
+    padding-inline-start: 0;
+    padding-block: 0;
+  }
+
+  header nav .nav-list .nav-item a {
+    padding: 4px 16px;
+    margin-inline: 0px;
+
+    border-radius: 6px;
+  }
+  /* END OF HEADER */
+
+  /* BEGIN OF MAIN */
+  main {
+  }
+
+  /* Services */
+  main .services .service-list {
+    gap: 16px 16px;
+  }
+
+  main .services .service-list .service-item {
+    flex-basis: 45%;
+  }
+  /* END OF MAIN */
+}
+
+/* LG: minimum viewport width 992px or above */
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  /* BEGIN OF HEADER */
+  header {
+  }
+  /* END OF HEADER */
+
+  /* BEGINNING OF MAIN */
+  main {
+  }
+
+  header .hero {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  header .hero .hero-content .hero-title {
+    font-size: 1.8rem;
+  }
+
+  header .hero .hero-content .hero-description {
+    font-size: 1.1rem;
+  }
+
+  header .hero .hero-content .hero-more-info {
+  }
+
+  header .hero .hero-image {
+    order: 0;
+  }
+
+  header .hero .hero-image img {
+  }
+
+  /* About */
+  main .about .content {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  main .about .content .content-image {
+    text-align: center;
+    flex-basis: 30%;
+
+    display: flex;
+  }
+
+  main .about .content .content-image img {
+    width: 100%;
+  }
+
+  main .about .content .content-description {
+    flex-basis: 70%;
+  }
+
+  /* Services */
+  main .services .service-list .service-item {
+    flex-basis: 30%;
+  }
+
+  /* Contact Us */
+  main .contactus .contactus-wrapper {
+    max-width: 80%;
+    margin-inline: auto;
+  }
+  /* END OF MAIN */
+
+  /* BEGIN OF FOOTER */
+  footer .footer-content {
+    flex-direction: row;
+  }
+
+  footer .footer-content > * {
+    flex: 1;
+  }
+  /* END OF FOOTER */
+}
+
+/* XL: minimum viewport width 1200px or above */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  /* BEGIN OF MAIN */
+  /* PORTFOLIOS */
+  main {
+  }
+
+  main .contactus .contactus-wrapper {
+    max-width: 70%;
+    margin-inline: auto;
+  }
+  /* END OF MAIN */
+}
